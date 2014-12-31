@@ -1,0 +1,29 @@
+# system.prop for apexqtmo
+#
+
+# DPI
+ro.sf.lcd_density=182
+
+# ril
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+telephony.lteOnGsmDevice=1
+ro.telephony.default_network=9
+ro.telephony.ril_class=apexqtmoRIL
+ro.ril.gprsclass=10
+ro.ril.hsxpa=1
+ro.ril.transmitpower=true
+ro.use_data_netmgrd=true
+ril.subscription.types=NV,RUIM
+
+# bt
+ro.qualcomm.bt.hci_transport=smd
+
+# audio
+persist.audio.fluence.mode=endfire
+persist.audio.handset.mic=digital
+ro.qc.sdk.audio.fluencetype=fluence
+
+# wifi
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=150
